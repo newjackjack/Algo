@@ -33,11 +33,29 @@ output: [0,1]
 
 function twoSum(arr, target) {
     //Your code here
-    
+    //creating two variables
+    // .reduce()
+    var index=[];
+    for ( var i = 0 ; i < arr.length; i++){
+        for( var j = arr.length; j>i; j--){
+            if(arr[i] + arr[j] === target){
+                index.push(i);
+                index.push(j);
+            }
+        }
+    }
+    return index;
 }
 
-console.log(twoSum([2, 11, 7, 15], 9)); // [0,2]
-console.log(twoSum([3, 2, 4], 6)); // [1,2]
-console.log(twoSum([3, 3], 6)); // [0,1]
+// console.log(twoSum([2, 11, 7, 15], 9)); // [0,2]
+// console.log(twoSum([3, 2, 4], 6)); // [1,2]
+// console.log(twoSum([3, 3], 6)); // [0,1]
 
 // if you finish early -- can you do this without nesting for loops? 
+function twoSum1(arr, target){
+    //code here
+
+}
+console.log(twoSum1([2, 11, 7, 15], 9)); // [0,2]
+console.log(twoSum1([3, 2, 4], 6)); // [1,2]
+console.log(twoSum1([3, 3], 6)); // [0,1]
