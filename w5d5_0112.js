@@ -35,5 +35,7 @@
     return empty
   }
   console.log(zipArraysIntoMap(keys1, vals1))
+  console.log(zipArraysIntoMap(keys2, vals2))
+
   /*****************************************************************************/
  
