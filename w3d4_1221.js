@@ -18,4 +18,4 @@ function getNthFib(n) {
     return n > 1 ? lastTwo[1] : lastTwo[0];
     
   }
-  console.log(getNthFib(8));
+  console.log(getNthFib(3));
